@@ -1,0 +1,19 @@
+.wrap {
+  width: 100%;
+  background-color: rgb(236, 71, 0);
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  margin: 0px, 36px;
+}
+
+.span {
+  color: white;
+}
+
+.closeBtn {
+  color: white;
+}
