@@ -5,19 +5,20 @@ export default function Header() {
     <header>
       <div className={styles.main}>
         <div className={styles.landing}>
-          <span>logo</span>
-          <div>
-            <a>클래스</a>
-            <div>spacediv</div>
-            <a>스토어</a>
+          <h4 className={styles.logo}>CLASS101</h4>
+          <div className={styles.classStore}>
+            <h4>클래스</h4>
+            <h4>스토어</h4>
           </div>
 
           <div className={styles.search}>
             <div>
               <div>
-                <p>검색어 입력</p>
+                <input
+                  className={styles.input}
+                  placeholder="찾으시는 취미가 있으신가요?"
+                />
               </div>
-              <span>돋보기svg</span>
             </div>
           </div>
 
