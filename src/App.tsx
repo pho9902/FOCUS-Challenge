@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import TopBanner from "./components/TopBanner";
 import { useState } from "react";
+import Carousel from "./components/Carousel";
 
 export default function App() {
   const [isOpen, setIsOpen] = useState<boolean>(true);
@@ -9,7 +10,7 @@ export default function App() {
     <div>
       {isOpen && <TopBanner setIsOpen={setIsOpen} />}
       <Header />
-      {/* 캐러셀 */}
+      <Carousel />
       {/* 캐러셀밑 배너 */}
       {/* 오늘의특가 섹션 */}
       {/* MD 추천 클래스 */}
