@@ -14,19 +14,18 @@ import {
 import { SearchIcon } from "@class101/ui";
 
 export default function Header() {
-  const baseUrl = "https://github.com/pho9902/FOCUS-Challenge";
   return (
     <header>
       <Main>
         <Landing>
-          <NoDecoA href={baseUrl}>
+          <NoDecoA href={process.env.REACT_APP_URL}>
             <Logo>CLASS101</Logo>
           </NoDecoA>
           <ClassStore>
-            <NoDecoA href={baseUrl}>
+            <NoDecoA href={process.env.REACT_APP_URL}>
               <h4>클래스</h4>
             </NoDecoA>
-            <NoDecoA href={baseUrl}>
+            <NoDecoA href={process.env.REACT_APP_URL}>
               <h4>스토어</h4>
             </NoDecoA>
           </ClassStore>
@@ -40,13 +39,13 @@ export default function Header() {
 
           <LoginDiv>
             <RightDiv>
-              <RightA href={baseUrl}>크리에이터지원</RightA>
+              <RightA href={process.env.REACT_APP_URL}>크리에이터지원</RightA>
             </RightDiv>
             <RightDiv>
-              <RightA href={baseUrl}>기업교육</RightA>
+              <RightA href={process.env.REACT_APP_URL}>기업교육</RightA>
             </RightDiv>
             <RightDiv>
-              <RightA href={baseUrl}>로그인</RightA>
+              <RightA href={process.env.REACT_APP_URL}>로그인</RightA>
             </RightDiv>
           </LoginDiv>
         </Landing>

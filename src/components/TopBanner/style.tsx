@@ -42,3 +42,8 @@ export const Close = styled(CloseIcon)`
     background-color: #b2502b;
   }
 `;
+
+export const WrapClose = styled.button`
+  background-color: rgb(236, 71, 0);
+  border: none;
+`;
