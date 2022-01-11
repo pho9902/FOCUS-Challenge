@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import TopBanner from "./components/TopBanner";
 import { useState } from "react";
 import Carousel from "./components/Carousel";
+import TodaySection from "./components/TodaySection";
 
 export default function App() {
   const [isOpen, setIsOpen] = useState<boolean>(true);
@@ -12,7 +13,7 @@ export default function App() {
       <Header />
       <Carousel />
       {/* 캐러셀밑 배너 */}
-      {/* 오늘의특가 섹션 */}
+      <TodaySection />
       {/* MD 추천 클래스 */}
       {/* 진행중인 인기 이벤트 */}
       {/* 오픈 예정 클래스 */}
