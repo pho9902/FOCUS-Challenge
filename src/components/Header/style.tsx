@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SearchIcon, ControlGroup } from "@class101/ui";
+import { ControlGroup } from "@class101/ui";
 
 export const Main = styled.div`
   width: 100%;
@@ -22,16 +22,17 @@ export const Landing = styled.div`
 
 export const Logo = styled.h4`
   font-size: 1.5em;
+  /* 폰트바꿔야됨 */
 `;
 
 export const ClassStore = styled.div`
   display: flex;
   margin-left: 28px;
-  h4:nth-of-type(1) {
-    color: #ff5600;
+  a:nth-of-type(1) {
+    color: #ff5600 !important;
     margin-right: 16px;
   }
-  h4:nth-of-type(2) {
+  a:nth-of-type(2) {
     margin-right: 36px;
   }
 `;
@@ -44,7 +45,6 @@ export const Input = styled.input`
   margin: 0px;
   width: 100%;
   padding-right: 52px;
-  /* padding: 12px 52px 12px 16px; */
   background: rgb(248, 248, 249);
   border: 1px solid rgb(248, 248, 249);
   box-sizing: border-box;
@@ -86,6 +86,7 @@ export const RightA = styled.a`
   white-space: nowrap;
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 `;
 
 export const RightDiv = styled.div`
@@ -105,4 +106,12 @@ export const LoginDiv = styled.div`
   justify-content: flex-end;
   -webkit-box-flex: 1;
   flex-grow: 1;
+`;
+
+export const NoDecoA = styled.a`
+  &:visited,
+  &:link {
+    color: black;
+    text-decoration: none;
+  }
 `;
