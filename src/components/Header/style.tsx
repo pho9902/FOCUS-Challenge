@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SearchIcon, ControlGroup } from "@class101/ui";
 
 export const Main = styled.div`
   width: 100%;
@@ -42,11 +43,66 @@ export const Input = styled.input`
   letter-spacing: -0.15px;
   margin: 0px;
   width: 100%;
-  padding: 12px 52px 12px 16px;
+  padding-right: 52px;
+  /* padding: 12px 52px 12px 16px; */
   background: rgb(248, 248, 249);
   border: 1px solid rgb(248, 248, 249);
   box-sizing: border-box;
   border-radius: 24px;
   text-align: left;
   color: rgb(26, 26, 26);
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const Form = styled(ControlGroup)`
+  background: rgb(248, 248, 249);
+  padding: 10px;
+  border: 1px solid rgb(248, 248, 249);
+  box-sizing: border-box;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  width: 420px;
+  height: 46px;
+`;
+
+export const SearchBtn = styled.button`
+  border: none;
+  outline: none;
+  padding: 0px;
+  background-color: transparent;
+  right: 16px;
+  cursor: pointer;
+  top: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+`;
+
+export const RightA = styled.a`
+  position: relative;
+  white-space: nowrap;
+  color: inherit;
+  text-decoration: none;
+`;
+
+export const RightDiv = styled.div`
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(26, 26, 26);
+  line-height: 20px;
+  letter-spacing: -0.15px;
+  margin: 0px;
+  margin-right: 24px;
+  min-width: 72px;
+`;
+
+export const LoginDiv = styled.div`
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
 `;
