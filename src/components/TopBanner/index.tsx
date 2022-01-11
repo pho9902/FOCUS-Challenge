@@ -4,8 +4,9 @@ export default function TopBanner() {
   return (
     <Wrap>
       <Container>
-        <Span>지금 가입하고 원하는 클래스 1개 무료 체험하기</Span>
-        <Close>X</Close>
+        <Span>지금 가입하고 원하는 클래스 1개 무료 체험하기{">"}</Span>
+
+        <Close fillColor="white" />
       </Container>
     </Wrap>
   );
