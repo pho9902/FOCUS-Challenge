@@ -1,3 +1,11 @@
+import { Wrap, Show } from "./style";
+import { top_event } from "../../apis/top_event";
+
 export default function Carousel() {
-  return <div>캐러셀부분 </div>;
+  console.log(top_event);
+  return (
+    <Wrap>
+      <Show>캐러셀</Show>
+    </Wrap>
+  );
 }
