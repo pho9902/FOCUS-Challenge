@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { time_deal } from "../../apis/time_deal";
 import {
   Wrap,
@@ -16,6 +17,36 @@ export default function TodaySection() {
     window.location.href = String(process.env.REACT_APP_URL);
   };
 
+  const data = time_deal.map((data, idx) => {
+    return (
+      <div key={idx}>
+        <div>
+          <img src={data.img} alt="thumbnail" />
+          <span>{data.coupon}만원 쿠폰</span>
+        </div>
+
+        <span>{data.creator}</span>
+        <span>{data.title}</span>
+        <div>
+          <span>하트 {data.like}</span>
+          <span>엄지 {data.thumsUp}</span>
+        </div>
+        <div>
+          <span>
+            {Math.floor(
+              ((data.price.originalPrice - data.price.salePrice) /
+                data.price.originalPrice) *
+                100
+            )}
+            %
+          </span>
+          <span>월 {data.price.salePrice / data.price.installment}원</span>
+          <span>({data.price.installment}개월)</span>
+        </div>
+      </div>
+    );
+  });
+
   return (
     <Wrap>
       <Section>
@@ -27,7 +58,7 @@ export default function TodaySection() {
             <AllClass onClick={() => routing()}>전체 클래스 보기</AllClass>
           </Header>
           <ItemContainer>
-            <Swiper>아이템</Swiper>
+            <Swiper>{data}</Swiper>
           </ItemContainer>
         </Block>
       </Section>
